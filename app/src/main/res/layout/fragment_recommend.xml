@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager_fragment_gumi_recommend_music"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+
+            <!-- 音乐之声所有 LinearLayout-->
+
+
+            <!-- 每日推荐LinearLayout -->
+            <LinearLayout
+                android:id="@+id/ll_everyday_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/viewpager_fragment_gumi_recommend_music"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="每日推荐"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <!-- 第一张图片 -->
+                    <LinearLayout
+                        android:id="@+id/linearLayout1_everyday_recommend"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:orientation="vertical">
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/imageview1_everyday_recommend"
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:text="猜你喜欢"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:ellipsize="end"
+                            android:lines="2"
+                            android:text="根据收听习惯为您量身定做"
+                            android:textColor="#888888" />
+
+                    </LinearLayout>
+
+                    <!-- 第二张图片 -->
+                    <LinearLayout
+                        android:id="@+id/linearLayout2_everyday_recommend"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:orientation="vertical">
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/imageview2_everyday_recommend"
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <TextView
+                            android:id="@+id/textview2_title_everyday_recommend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:text="爱生活,爱自己"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/textview2_summary_everyday_recommend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:ellipsize="end"
+                            android:lines="2"
+                            android:text="家，学校，家"
+                            android:textColor="#888888" />
+
+                    </LinearLayout>
+
+                    <!-- 第三张图片 -->
+                    <LinearLayout
+                        android:id="@+id/linearLayout3_everyday_recommend"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:orientation="vertical">
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/imageview3_everyday_recommend"
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <TextView
+                            android:id="@+id/textview3_title_everyday_recommend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:text="爱生活,爱自己"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/textview3_summary_everyday_recommend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:ellipsize="end"
+                            android:lines="2"
+                            android:text="家，学校，家"
+                            android:textColor="#888888" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <!-- 第一张图片 -->
+                    <LinearLayout
+                        android:id="@+id/linearLayout4_everyday_recommend"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:orientation="vertical">
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/imageview4_everyday_recommend"
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <TextView
+                            android:id="@+id/textview4_title_everyday_recommend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:text="霸屏没道理"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/textview4_summary_everyday_recommend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:ellipsize="end"
+                            android:lines="2"
+                            android:text="根据收听习惯为您量身定做"
+                            android:textColor="#888888" />
+
+                    </LinearLayout>
+
+                    <!-- 第二张图片 -->
+                    <LinearLayout
+                        android:id="@+id/linearLayout5_everyday_recommend"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:orientation="vertical">
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/imageview5_everyday_recommend"
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <TextView
+                            android:id="@+id/textview5_title_everyday_recommend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:text="爱生活,爱自己"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/textview5_summary_everyday_recommend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:ellipsize="end"
+                            android:lines="2"
+                            android:text="家，学校，家"
+                            android:textColor="#888888" />
+
+                    </LinearLayout>
+
+                    <!-- 第三张图片 -->
+                    <LinearLayout
+                        android:id="@+id/linearLayout6_everyday_recommend"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:orientation="vertical">
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/imageview6_everyday_recommend"
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <TextView
+                            android:id="@+id/textview6_title_everyday_recommend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:text="爱生活,爱自己"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/textview6_summary_everyday_recommend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:ellipsize="end"
+                            android:lines="2"
+                            android:text="家，学校，家"
+                            android:textColor="#888888" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            -->
+
+            <!-- 热门歌曲整个LinearLayout -->
+            <LinearLayout
+                android:id="@+id/linearlayout_hot_song"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_everyday_recommend"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <!-- 热门歌曲文字LinearLayout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="热门歌曲" />
+
+                    <TextView
+                        android:id="@+id/textView_more"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="更多"
+                        android:textColor="#CF4668" />
+                </LinearLayout>
+
+                <!-- 中间的一条横线 -->
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="#DAD9D9" />
+
+                <!-- 歌曲信息行布局1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <com.android.volley.toolbox.NetworkImageView
+                        android:id="@+id/iv_item_albumIcon1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/music" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_songer_and_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_item_hot_song_title1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="歌曲名" />
+
+                        <TextView
+                            android:id="@+id/tv_item_hot_song_songer1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="歌手"
+                            android:textColor="#a6a8a8" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_san_dian_menu1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/san_dian_menu" />
+
+                </LinearLayout>
+
+                <!-- 中间的一条横线 -->
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="#DAD9D9" />
+
+                <!-- 歌曲信息行布局2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <com.android.volley.toolbox.NetworkImageView
+                        android:id="@+id/iv_item_albumIcon2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/music" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_songer_and_title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_item_hot_song_title2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="歌曲名" />
+
+                        <TextView
+                            android:id="@+id/tv_item_hot_song_songer2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="歌手"
+                            android:textColor="#a6a8a8" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_san_dian_menu2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/san_dian_menu" />
+
+                </LinearLayout>
+
+                <!-- 中间的一条横线 -->
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="#DAD9D9" />
+
+                <!-- 歌曲信息行布局3 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <com.android.volley.toolbox.NetworkImageView
+                        android:id="@+id/iv_item_albumIcon3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/music" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_songer_and_title3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_item_hot_song_title3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="歌曲名" />
+
+                        <TextView
+                            android:id="@+id/tv_item_hot_song_songer3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="歌手"
+                            android:textColor="#a6a8a8" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_san_dian_menu3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/san_dian_menu" />
+
+                </LinearLayout>
+
+                <!-- 中间的一条横线 -->
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="#DAD9D9" />
+
+                <!-- 歌曲信息行布局4 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <com.android.volley.toolbox.NetworkImageView
+                        android:id="@+id/iv_item_albumIcon4"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/music" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_songer_and_title4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_item_hot_song_title4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="歌曲名" />
+
+                        <TextView
+                            android:id="@+id/tv_item_hot_song_songer4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="歌手"
+                            android:textColor="#a6a8a8" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_san_dian_menu4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/san_dian_menu" />
+
+                </LinearLayout>
+
+                <!-- 中间的一条横线 -->
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="#DAD9D9" />
+
+                <!-- 歌曲信息行布局5 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <com.android.volley.toolbox.NetworkImageView
+                        android:id="@+id/iv_item_albumIcon5"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/music" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_songer_and_title5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_item_hot_song_title5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="歌曲名" />
+
+                        <TextView
+                            android:id="@+id/tv_item_hot_song_songer5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="歌手"
+                            android:textColor="#a6a8a8" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_san_dian_menu5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/san_dian_menu" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- 咪咕专栏整个LinearLayout -->
+            <LinearLayout
+                android:id="@+id/linearlayout_Special_column"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearlayout_hot_song"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <!-- 咪咕专栏LinearLayout -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="咪咕专栏"
+                    android:textSize="18sp" />
+
+                <!-- 专栏行布局1 -->
+                <LinearLayout
+                    android:id="@+id/linearLayout_Special_column1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal">
+
+                    <com.android.volley.toolbox.NetworkImageView
+                        android:id="@+id/iv_item_Special_column1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/music" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_songer_and_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_item_title_Special_column1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:text="专栏名称" />
+
+                        <TextView
+                            android:id="@+id/tv_item_summary_Special_column1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:text="专栏的简单介绍阿斯达打扫打扫打扫打扫打扫都是"
+                            android:textColor="#a6a8a8" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_san_dian_menu1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/bg_arrow" />
+
+                </LinearLayout>
+
+                <!-- 专栏行布局2 -->
+                <LinearLayout
+                    android:id="@+id/linearLayout_Special_column2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal">
+
+                    <com.android.volley.toolbox.NetworkImageView
+                        android:id="@+id/iv_item_Special_column2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/music" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_songer_and_title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_item_title_Special_column2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:text="歌曲名" />
+
+                        <TextView
+                            android:id="@+id/tv_item_summary_Special_column2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:text="歌手"
+                            android:textColor="#a6a8a8" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_san_dian_menu2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/bg_arrow" />
+
+                </LinearLayout>
+
+                <!-- 专栏行布局3 -->
+                <LinearLayout
+                    android:id="@+id/linearLayout_Special_column3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal">
+
+                    <com.android.volley.toolbox.NetworkImageView
+                        android:id="@+id/iv_item_Special_column3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/music" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_songer_and_title3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_item_title_Special_column3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:text="歌曲名" />
+
+                        <TextView
+                            android:id="@+id/tv_item_summary_Special_column3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:text="歌手"
+                            android:textColor="#a6a8a8" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_san_dian_menu3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/bg_arrow" />
+
+                </LinearLayout>
+
+                <!-- 专栏行布局4 -->
+                <LinearLayout
+                    android:id="@+id/linearLayout_Special_column4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal">
+
+                    <com.android.volley.toolbox.NetworkImageView
+                        android:id="@+id/iv_item_Special_column4"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/music" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_songer_and_title4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_item_title_Special_column4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:text="歌曲名" />
+
+                        <TextView
+                            android:id="@+id/tv_item_summary_Special_column4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:text="歌手"
+                            android:textColor="#a6a8a8" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_san_dian_menu4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/bg_arrow" />
+
+                </LinearLayout>
+
+                <!-- 专栏行布局5 -->
+                <LinearLayout
+                    android:id="@+id/linearLayout_Special_column5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal">
+
+                    <com.android.volley.toolbox.NetworkImageView
+                        android:id="@+id/iv_item_Special_column5"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/music" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_songer_and_title5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_item_title_Special_column5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:text="歌曲名" />
+
+                        <TextView
+                            android:id="@+id/tv_item_summary_Special_column5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:text="歌手"
+                            android:textColor="#a6a8a8" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_san_dian_menu5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/bg_arrow" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

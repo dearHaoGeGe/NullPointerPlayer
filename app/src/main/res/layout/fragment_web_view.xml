@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_title_bar"
+        android:background="#2C2C2C"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView_back2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/btn_back_to_meun_focus"/>
+
+        <TextView
+            android:id="@+id/textView_title"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="#FFFFFF"
+            android:text="亚洲新歌榜"
+            android:ellipsize="end"
+            android:lines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <WebView
+        android:layout_weight="0.2"
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
